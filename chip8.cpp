@@ -35,6 +35,9 @@ void chip8::initialize()
 void chip8::emulateCycle()
 {
     // Fetch Opcode
+    // Assumed that first byte is pc and second is pc+1
+    opcode = memory[pc] << 8 | memory[pc + 1];
+
     // Decode Opcode
     // Execute Opcode
  
