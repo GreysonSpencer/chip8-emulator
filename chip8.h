@@ -33,6 +33,16 @@ class chip8 {
         // Hex based keypad
         // 0x0-0xF
         unsigned char key[16];
+
+    public:
+        // Initialize registers and memory
+        void initialize();
+
+        // Fetch Opcode
+        // Decode Opcode
+        // Execute Opcode
+        // Update timers
+        void emulateCycle();
 };
 
 #endif
