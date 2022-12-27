@@ -10,7 +10,10 @@ void chip8::initialize()
     // Clear display
     // Clear stack
     // Clear registers V0-VF
+    
     // Clear memory
+    memset(memory, 0, 4096);
+    
 
     // Load fontset
     // for (int i = 0; i < 80; i++)

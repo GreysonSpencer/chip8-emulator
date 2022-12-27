@@ -1,6 +1,8 @@
 #ifndef CHIP8_H
 #define CHIP8_H
 
+#include <string.h>
+
 class chip8 {
     private:
         // Currently loaded opcode
