@@ -22,10 +22,10 @@ void chip8::initialize()
     
 
     // Load fontset
-    // for (int i = 0; i < 80; i++)
-    // {
-    //     memory[i] = chip8_fontset[i];
-    // }
+    for (int i = 0; i < 80; i++)
+    {
+        memory[i] = chip8_fontset[i];
+    }
     
     // Reset timers
     delay_timer = 0;
