@@ -29,6 +29,10 @@ class chip8 {
         // Stack levels and stack pointer
         unsigned short stack[16];
         unsigned short sp;
+
+        // Hex based keypad
+        // 0x0-0xF
+        unsigned char key[16];
 };
 
 #endif
