@@ -34,9 +34,9 @@ void chip8::initialize()
  
 void chip8::emulateCycle()
 {
-  // Fetch Opcode
-  // Decode Opcode
-  // Execute Opcode
+    // Fetch Opcode
+    // Decode Opcode
+    // Execute Opcode
  
-  // Update timers
+    // Update timers
 }
