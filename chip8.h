@@ -25,6 +25,10 @@ class chip8 {
         // When above 0, will count down to 0 at 60hz
         unsigned char delay_timer;
         unsigned char sound_timer;
+
+        // Stack levels and stack pointer
+        unsigned short stack[16];
+        unsigned short sp;
 };
 
 #endif
