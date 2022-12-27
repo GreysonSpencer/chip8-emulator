@@ -8,7 +8,11 @@ void chip8::initialize()
     sp = 0; // Reset stack pointer
 
     // Clear display
+
     // Clear stack
+    for (int i = 0; i < 16; i++)
+        stack[i] = 0;
+
     // Clear registers V0-VF
     
     // Clear memory
