@@ -22,6 +22,8 @@ void chip8::initialize()
     // }
     
     // Reset timers
+    delay_timer = 0;
+    sound_timer = 0;
 }
  
 void chip8::emulateCycle()
