@@ -14,6 +14,8 @@ void chip8::initialize()
         stack[i] = 0;
 
     // Clear registers V0-VF
+    for (int i = 0; i < 16; i++)
+        V[i] = 0;
     
     // Clear memory
     memset(memory, 0, 4096);
