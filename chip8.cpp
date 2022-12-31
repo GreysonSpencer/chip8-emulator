@@ -41,7 +41,14 @@ void chip8::emulateCycle()
     // Decode Opcode
     switch(opcode & 0xF000)
     {
-
+        case 0x0000:
+            switch(opcode & 0x000F)
+            {
+                case 0x0000:
+                    // Clear the screen
+                break;
+            }
+        break;
     }
 
 
