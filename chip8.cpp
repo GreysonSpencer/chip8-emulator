@@ -62,8 +62,11 @@ void chip8::emulateCycle()
 
         // First hex number is 2
         // 0x2NNN
+        // Call subroutine at NNN
         case 0x2000:
-            // Call subroutine at NNNN
+            stack[sp] = pc;
+            sp++;
+            pc = opcode & 0x0FFF;
         break;
 
         // First hex number is 3
