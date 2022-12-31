@@ -83,6 +83,12 @@ void chip8::emulateCycle()
         case 0x5000:
             // Skips next instruction if VX equals VY
         break;
+
+        // First hex number is 6
+        // 0x6XNN
+        case 0x6000:
+            // Sets VX equal to NN
+        break;
     }
 
 
