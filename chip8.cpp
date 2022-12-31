@@ -44,8 +44,14 @@ void chip8::emulateCycle()
         case 0x0000:
             switch(opcode & 0x000F)
             {
+                // 0x00E0
                 case 0x0000:
                     // Clear the screen
+                break;
+
+                // 0x00EE
+                case 0x000E:
+                    // Return from subroutine
                 break;
             }
         break;
