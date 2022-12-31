@@ -39,9 +39,9 @@ void chip8::emulateCycle()
     opcode = memory[pc] << 8 | memory[pc + 1];
 
     // Decode Opcode
-    switch(opcode & 0x000F)
+    switch(opcode & 0xF000)
     {
-        
+
     }
 
 
