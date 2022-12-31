@@ -95,6 +95,31 @@ void chip8::emulateCycle()
         case 0x7000:
             // Adds NN to VX
         break;
+
+        // First hex number is 8
+        case 0x8000:
+            switch(opcode & 0x000F)
+            {
+                case 0x0000:
+                break;
+                case 0x0001:
+                break;
+                case 0x0002:
+                break;
+                case 0x0003:
+                break;
+                case 0x0004:
+                break;
+                case 0x0005:
+                break;
+                case 0x0006:
+                break;
+                case 0x0007:
+                break;
+                case 0x000E:
+                break;
+            }
+        break;
     }
 
 
