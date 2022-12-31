@@ -86,7 +86,6 @@ void chip8::emulateCycle()
         // 0x4XNN
         // Skips next instruction if VX does not equal NN
         case 0x4000:
-            
             unsigned char x = opcode & 0x0F00;
             unsigned char nn = opcode & 0x00FF;
 
