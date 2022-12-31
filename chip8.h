@@ -2,6 +2,7 @@
 #define CHIP8_H
 
 #include <string.h>
+#include <iostream>
 
 class chip8 {
     private:

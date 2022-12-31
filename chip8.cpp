@@ -53,6 +53,9 @@ void chip8::emulateCycle()
                 case 0x000E:
                     // Return from subroutine
                 break;
+
+                default:
+                    std::cout << "Bad opcode: " << opcode << std::endl;
             }
         break;
     }
