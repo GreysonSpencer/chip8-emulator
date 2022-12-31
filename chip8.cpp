@@ -71,8 +71,15 @@ void chip8::emulateCycle()
 
         // First hex number is 3
         // 0x3XNN
+        // Skips next instruction if VX equals NN
         case 0x3000:
-            // Skips next instruction if VX equals NN
+            unsigned char x = opcode & 0x0F00;
+            unsigned char nn = opcode & 0x00FF;
+
+            if(V[x] == nn)
+                pc += 4;
+            else
+                pc += 2;
         break;
 
         // First hex number is 4
