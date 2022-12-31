@@ -97,8 +97,15 @@ void chip8::emulateCycle()
 
         // First hex number is 5
         // 0x5XY0
+        // Skips next instruction if VX equals VY
         case 0x5000:
-            // Skips next instruction if VX equals VY
+            unsigned char x = opcode & 0x0F00;
+            unsigned char y = opcode & 0x00F0;
+
+            if(V[x] == V[y])
+                pc += 4;
+            else
+                pc += 2;
         break;
 
         // First hex number is 6
