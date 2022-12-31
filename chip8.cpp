@@ -65,6 +65,12 @@ void chip8::emulateCycle()
         case 0x2000:
             // Call subroutine at NNNN
         break;
+
+        // First hex number is 3
+        // 0x3XNN
+        case 0x3000:
+            // Skips next instruction if VX equals NN
+        break;
     }
 
 
