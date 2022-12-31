@@ -120,6 +120,35 @@ void chip8::emulateCycle()
                 break;
             }
         break;
+
+        // First hex number is 9
+        case 0x9000:
+            // 
+        break;
+        // First hex number is 9
+        case 0xA000:
+            // 
+        break;
+        // First hex number is 9
+        case 0xB000:
+            // 
+        break;
+        // First hex number is 9
+        case 0xC000:
+            // 
+        break;
+        // First hex number is 9
+        case 0xD000:
+            // 
+        break;
+        // First hex number is 9
+        case 0xE000:
+            // 
+        break;
+        // First hex number is 9
+        case 0xF000:
+            // 
+        break;
     }
 
 
