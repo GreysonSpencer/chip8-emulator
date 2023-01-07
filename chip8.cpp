@@ -155,6 +155,11 @@ void chip8::emulateCycle()
                 break;
                 // Sets VX to VX xor VY
                 case 0x0003:
+                    unsigned char x = opcode & 0x0F00;
+                    unsigned char y = opcode & 0x00F0;
+
+                    V[x] = V[x] ^ V[y];
+                    pc += 2;
                 break;
                 // Adds VY to VX. VF is set to 1 when there's a carry, and to 0 when there is not
                 case 0x0004:
