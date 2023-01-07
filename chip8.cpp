@@ -129,10 +129,13 @@ void chip8::emulateCycle()
         case 0x8000:
             switch(opcode & 0x000F)
             {
+                // Sets Vx equal to Vy
                 case 0x0000:
                 break;
+                // Sets Vx equal to Vx or Vy
                 case 0x0001:
                 break;
+                // Sets Vx equal to Vx and Vy
                 case 0x0002:
                 break;
                 case 0x0003:
