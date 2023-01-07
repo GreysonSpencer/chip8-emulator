@@ -131,6 +131,11 @@ void chip8::emulateCycle()
             {
                 // Sets Vx equal to Vy
                 case 0x0000:
+                    unsigned char x = opcode & 0x0F00;
+                    unsigned char y = opcode & 0x00F0;
+
+                    V[x] = V[y];
+                    pc += 2;
                 break;
                 // Sets Vx equal to Vx or Vy
                 case 0x0001:
