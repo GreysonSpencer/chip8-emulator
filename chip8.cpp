@@ -184,8 +184,12 @@ void chip8::emulateCycle()
             // 
         break;
         // First hex number is A
+        // Sets I = NNN
         case 0xA000:
-            // 
+            unsigned short nnn = opcode & 0x0FFF;
+
+            I = nnn;
+            pc += 2;
         break;
         // First hex number is B
         case 0xB000:
