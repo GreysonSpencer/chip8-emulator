@@ -110,8 +110,13 @@ void chip8::emulateCycle()
 
         // First hex number is 6
         // 0x6XNN
+        // Sets VX equal to NN
         case 0x6000:
-            // Sets VX equal to NN
+            unsigned char x = opcode & 0x0F00;
+            unsigned char nn = opcode & 0x00FF;
+
+            V[x] = nn;
+            pc += 2;
         break;
 
         // First hex number is 7
