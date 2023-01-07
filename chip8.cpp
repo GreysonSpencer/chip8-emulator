@@ -138,16 +138,22 @@ void chip8::emulateCycle()
                 // Sets Vx equal to Vx and Vy
                 case 0x0002:
                 break;
+                // Sets VX to VX xor VY
                 case 0x0003:
                 break;
+                // Adds VY to VX. VF is set to 1 when there's a carry, and to 0 when there is not
                 case 0x0004:
                 break;
+                // VY is subtracted from VX. VF is set to 0 when there's a borrow, and 1 when there is not
                 case 0x0005:
                 break;
+                // Stores the least significant bit of VX in VF and then shifts VX to the right by 1
                 case 0x0006:
                 break;
+                // Sets VX to VY minus VX. VF is set to 0 when there's a borrow, and 1 when there is not
                 case 0x0007:
                 break;
+                // Stores the most significant bit of VX in VF and then shifts VX to the left by 1
                 case 0x000E:
                 break;
             }
