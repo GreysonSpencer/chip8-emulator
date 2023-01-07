@@ -60,6 +60,13 @@ void chip8::emulateCycle()
             }
         break;
 
+        // First hex number is 1
+        case 0x1000:
+            unsigned short nnn = opcode & 0x0FFF;
+
+            pc = nnn;
+        break;
+
         // First hex number is 2
         // 0x2NNN
         // Call subroutine at NNN
