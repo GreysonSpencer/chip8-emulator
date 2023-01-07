@@ -41,7 +41,7 @@ void chip8::emulateCycle()
     // Decode Opcode
     switch(opcode & 0xF000)
     {
-        // First hex number is 1
+        // First hex number is 0
         case 0x0000:
             switch(opcode & 0x000F)
             {
