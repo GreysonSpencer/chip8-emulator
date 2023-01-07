@@ -187,8 +187,9 @@ void chip8::emulateCycle()
         break;
 
         // First hex number is 9
+        // Skips next instruction if Vx != Vy
         case 0x9000:
-            // 
+            
         break;
         // First hex number is A
         // Sets I = NNN
