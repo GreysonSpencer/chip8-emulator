@@ -183,27 +183,27 @@ void chip8::emulateCycle()
         case 0x9000:
             // 
         break;
-        // First hex number is 9
+        // First hex number is A
         case 0xA000:
             // 
         break;
-        // First hex number is 9
+        // First hex number is B
         case 0xB000:
             // 
         break;
-        // First hex number is 9
+        // First hex number is C
         case 0xC000:
             // 
         break;
-        // First hex number is 9
+        // First hex number is D
         case 0xD000:
             // 
         break;
-        // First hex number is 9
+        // First hex number is E
         case 0xE000:
             // 
         break;
-        // First hex number is 9
+        // First hex number is F
         case 0xF000:
             // 
         break;
